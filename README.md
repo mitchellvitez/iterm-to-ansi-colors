@@ -6,3 +6,5 @@ Useful for transforming a .itermcolors file on a mac into something usable with 
 In cygwin:
 
 `python iterm_to_ansi.py <COLORSCHEME>.itermcolors >> ~/.minttyrc`
+
+Restart cygwin and you should see your new colors
