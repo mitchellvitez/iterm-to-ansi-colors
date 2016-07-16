@@ -1,5 +1,5 @@
 # Converts .itermcolors to colors usable with cygwin. Usage:
-# python iterm_to_cygwin.py vital.itermcolors >> ~/.minttyrc
+# python iterm_to_ansi.py vital.itermcolors >> ~/.minttyrc
 
 import plistlib
 import sys
@@ -47,8 +47,8 @@ def main():
 
             values_255 = get_values_255(components)
             values_255_string = ','.join(str(x) for x in values_255)
+            
             print '{}={}'.format(color_name, values_255_string)
 
 if __name__ == '__main__':
     main()
-
